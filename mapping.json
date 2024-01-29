@@ -1,0 +1,174 @@
+{
+    "properties": {
+      "age_on_set_match": {
+        "type": "boolean"
+      },
+      "does_it_switch": {
+        "type": "boolean"
+      },
+      "entities": {
+        "type": "object",
+        "properties": {
+          "Attributes": {
+            "type": "object",
+            "properties": {
+              "BeginOffset": {
+                "type": "long"
+              },
+              "Category": {
+                "fields": {
+                  "keyword": {
+                    "type": "keyword",
+                    "ignore_above": 256
+                  }
+                },
+                "type": "text"
+              },
+              "EndOffset": {
+                "type": "long"
+              },
+              "Id": {
+                "type": "long"
+              },
+              "RelationshipScore": {
+                "type": "float"
+              },
+              "RelationshipType": {
+                "fields": {
+                  "keyword": {
+                    "type": "keyword",
+                    "ignore_above": 256
+                  }
+                },
+                "type": "text"
+              },
+              "Score": {
+                "type": "float"
+              },
+              "Text": {
+                "fields": {
+                  "keyword": {
+                    "type": "keyword",
+                    "ignore_above": 256
+                  }
+                },
+                "type": "text"
+              },
+              "Traits": {
+                "type": "object",
+                "properties": {
+                  "Name": {
+                    "fields": {
+                      "keyword": {
+                        "type": "keyword",
+                        "ignore_above": 256
+                      }
+                    },
+                    "type": "text"
+                  },
+                  "Score": {
+                    "type": "float"
+                  }
+                }
+              },
+              "Type": {
+                "fields": {
+                  "keyword": {
+                    "type": "keyword",
+                    "ignore_above": 256
+                  }
+                },
+                "type": "text"
+              }
+            }
+          },
+          "BeginOffset": {
+            "type": "long"
+          },
+          "Category": {
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+              }
+            },
+            "type": "text"
+          },
+          "EndOffset": {
+            "type": "long"
+          },
+          "Id": {
+            "type": "long"
+          },
+          "Score": {
+            "type": "float"
+          },
+          "Text": {
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+              }
+            },
+            "type": "text"
+          },
+          "Traits": {
+            "type": "object",
+            "properties": {
+              "Name": {
+                "fields": {
+                  "keyword": {
+                    "type": "keyword",
+                    "ignore_above": 256
+                  }
+                },
+                "type": "text"
+              },
+              "Score": {
+                "type": "float"
+              }
+            }
+          },
+          "Type": {
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+              }
+            },
+            "type": "text"
+          }
+        }
+      },
+      "has_side_effects": {
+        "type": "boolean"
+      },
+      "sentiment": {
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        },
+        "type": "text"
+      },
+      "tag": {
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        },
+        "type": "text"
+      },
+      "text": {
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        },
+        "type": "text"
+      }
+    }
+  }
